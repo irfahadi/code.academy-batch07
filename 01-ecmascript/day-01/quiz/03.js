@@ -1,6 +1,6 @@
 z = 0
 const howManyFrogJump = (X,Y,K) =>{
-    if(X<Y && X+K < Y){
+    if(X<Y && X+K <=Y){
         z++
     }
     while( X+K < Y)
@@ -11,6 +11,6 @@ const howManyFrogJump = (X,Y,K) =>{
     }
     
     return z
-}
+}zzz
 
 console.log(howManyFrogJump(10,10,10));
