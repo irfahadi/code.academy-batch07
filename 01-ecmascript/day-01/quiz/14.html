@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            let small = NaN;
+            let large = NaN;
+            n = Number(prompt(`Enter a number : `));
+            while (n !== -99) {
+                if(n<small){
+                    small=n;
+                }
+                if(n>large){
+                    large=n;
+                }
+                n = Number(prompt(`Enter a number : `));
+            }
+            alert(`Largest Number: ${large}\nSmallest Number: ${small}`)
+        </script>
+    </body>
+</html>

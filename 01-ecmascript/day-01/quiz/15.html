@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            let budget = Number(prompt(`Enter your mothly budget : `));
+            let n = 0
+            let count = 1
+            let total = 0
+            while (n !== -1) {
+                n = Number(prompt(`Money Spent This Month (type -1 to quit):\n----------------------------------------------\nEnter cost #${count} : `));
+                count++;
+                total += n;
+            }
+            budget-=Number(total)
+            alert(`You are $${budget} under your budget`)
+        </script>
+    </body>
+</html>

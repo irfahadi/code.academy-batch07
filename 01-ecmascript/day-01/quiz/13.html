@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            let count = 0
+            let max = 0
+            let nilai = []
+            for (let i = 1; i <= 8; i++) {
+                let n = Number(prompt(`Enter a grade for student no ${i} `));
+                nilai.push(n)
+            }
+            for (let i = 0; i < 8; i++) {
+                if(nilai[i] >= 90){
+                    count++;
+                }
+                if(nilai[i] >max){
+                    max=nilai[i];
+                }
+            }
+            alert(`nilai tertinggi : ${max}, jumlah siswa nilai ujian >= 90 : ${count} siswa `)
+        </script>
+    </body>
+</html>

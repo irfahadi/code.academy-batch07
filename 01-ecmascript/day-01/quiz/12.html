@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            let large = 0;
+            let n = Number(prompt(`Enter number [enter 0 to exit]: `));
+            while (n !== 0) {
+                if(n>large){
+                    large=n;
+                    console.log(large);
+                }
+                n = Number(prompt(`Enter number [enter 0 to exit]: `));
+            }
+            alert(`Bilangan Maximal: ${large}`)
+        </script>
+    </body>
+</html>
