@@ -1,7 +1,7 @@
 let employees = ["Raiz","Alif","Fahmi","Ahmad","Dafa","Ale","Amar","Andi","Rizki"];
 
 // arrow function filter  
-const filterEmp2 = (emp,prefix) => emp.filter(emp=>emp.startsWith(prefix));
+const filter     = (emp,prefix) => emp.filter(emp=>emp.startsWith(prefix));
 
 // old ways 
 
