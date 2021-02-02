@@ -1,7 +1,6 @@
 const isPermutation = (x,y) =>{
     const xi = x.split("");
     const yj = y.split("");
-    cek = false;
     let count = 0
     if(xi.length===yj.length){
         for (const i of xi) {
@@ -13,12 +12,12 @@ const isPermutation = (x,y) =>{
             }
         }
         if(count===x.length){
-            cek=true;
+            return true
         }
     }
-    return cek;
+    return false;
 }
 
 console.log(isPermutation('aba', 'aab')); //true
-console.log(isPermutation('aba', 'aaba')); //false
+console.log(isPermutation('aba', 'aaba ')); //false
 console.log(isPermutation('aba', 'aa'));//false

@@ -5,12 +5,12 @@ const isUniqueChars = (x) =>{
         for (let j = 0; j < y.length; j++) {
             if(i!==j){
                 if(y[i]===y[j]){
-                    cek=false;
+                    return console.log(false)
                 }
             }
         }
     }
-    return console.log(cek); 
+    return console.log(true); 
 }
 
 isUniqueChars('abcdefg');//return true
