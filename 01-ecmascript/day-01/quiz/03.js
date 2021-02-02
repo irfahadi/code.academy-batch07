@@ -11,6 +11,6 @@ const howManyFrogJump = (X,Y,K) =>{
     }
     
     return z
-}zzz
+}
 
 console.log(howManyFrogJump(10,10,10));
