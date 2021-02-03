@@ -1,0 +1,22 @@
+@startuml student-bootcamp
+
+class Student{
+    fullName
+    city
+    education
+    grade
+    type
+    bootcamp
+    batch
+    skillPoint
+}
+
+class Beasiswa extends Student {
+    insentif
+}
+
+class Reguler extends Student {
+    netPrice
+}
+
+@enduml
