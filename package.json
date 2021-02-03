@@ -1,0 +1,17 @@
+{
+  "name": "code.academy",
+  "version": "1.0.0",
+  "description": "bootcamp fullstact node.js",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfahadi/code.academy-batch07.git"
+  },
+  "author": "fahmiagas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irfahadi/code.academy-batch07/issues"
+  },
+  "homepage": "https://github.com/irfahadi/code.academy-batch07#readme"
+}

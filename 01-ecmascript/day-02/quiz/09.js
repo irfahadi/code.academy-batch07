@@ -1,5 +1,5 @@
 const replaceSpace = (x) =>{
-    y= x.split("")
+     y= x.split("")
     for (let i = 0; i < y.length; i++) {
         if (y[i]===" "){
             y[i]= '%20'
