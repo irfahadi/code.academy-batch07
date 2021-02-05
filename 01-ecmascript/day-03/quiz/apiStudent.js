@@ -30,7 +30,7 @@ export const totalStudentByBootcamp = (bootcamp, ...list) =>{
     list.map(element=> 
           {
             if (element.bootcamp === bootcamp) {
-                count++;
+                count++;  
               }
           }
     )
