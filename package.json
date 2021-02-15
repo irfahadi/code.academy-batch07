@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/irfahadi/code.academy-batch07/issues"
   },
-  "homepage": "https://github.com/irfahadi/code.academy-batch07#readme"
+  "homepage": "https://github.com/irfahadi/code.academy-batch07#readme",
+  "dependencies": {
+    "react-router-dom": "^5.2.0"
+  }
 }

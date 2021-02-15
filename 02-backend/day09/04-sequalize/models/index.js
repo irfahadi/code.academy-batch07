@@ -9,8 +9,6 @@ const sequelize = new Sequelize(
   },
 );
 
-
-
 const models = {
   Regions: sequelize.import('./regions.model'),
 };

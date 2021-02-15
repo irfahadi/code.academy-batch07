@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node ./day09/04-sequalize/index.js",
-    "reverse:db": "sequelize-auto -o ./out -d batch7 -h localhost -u postgres -p 5432 -x agas -e postgres"
+    "start": "nodemon --exec babel-node ./mini-project-V2/index.js",
+    "reverse:db": "sequelize-auto -o ./modelquiz -d quiz -h localhost -u postgres -p 5432 -x agas -e postgres"
   },
   "author": "",
   "license": "ISC",
