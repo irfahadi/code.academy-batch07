@@ -6,7 +6,7 @@ export default function header() {
         <div className="navtop">
             <ul>
                 <li className="logo">
-                    <a><img src="images/code-id.webp" /></a>     
+                    <a><img src="/images/code-id.webp" /></a>     
                 </li>
                 <li><Link to ="/">Home</Link></li>
                 <li><Link to ="/about">About</Link></li>

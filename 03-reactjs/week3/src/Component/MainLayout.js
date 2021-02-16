@@ -1,11 +1,12 @@
-import { Route } from 'react-router-dom'
-import Header from './Header'
-import SideBar from './SideBar'
-import Home from './Home'
-import Counter from './Counter'
-import List from './list/List'
-import Todo from './todo/Todo'
-import Error404 from './Error404'
+import { Route, Switch } from 'react-router-dom'
+import Header from './header'
+import SideBar from './sidebar'
+import Home from './container/home'
+import Counter from './container/counter'
+import List from './container/list'
+import Todo from './container/todo'
+import Error404 from './container/error404'
+import Movies from './container/movies'
 
 const MainLayout = () =>{
     return (
@@ -13,11 +14,14 @@ const MainLayout = () =>{
             <Header />
             <SideBar />
             <div className="maincontent">
+                <Switch>
                 <Route path="/" component={Home} exact />
                 <Route path="/counter" component={Counter} />
                 <Route path="/list" component={List} />
                 <Route path="/todo" component={Todo} />
-                {/* <Route component={Error404} /> */}
+                <Route path="/movies" component={Movies} />
+                <Route component={Error404} />
+                </Switch>
             </div>
         </div>
     )

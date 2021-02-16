@@ -18,9 +18,16 @@ const SideBar = () =>{
             component: null
         },
         {
-            id:1,
+            id:3,
             path:'/todo',
             name: 'Todo',            
+            exact: true,
+            component: null
+        },
+        {
+            id:4,
+            path:'/movies',
+            name: 'Movies',            
             exact: true,
             component: null
         }
