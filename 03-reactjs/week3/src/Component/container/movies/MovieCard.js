@@ -7,7 +7,7 @@ import './Movie.css'
 export default function Movie(props) {
     return (
         <div>
-            <div className="card" style={{backgroundImage:`url(images/images/${props.poster})`}}>
+            <div className="card" style={{backgroundImage:`url(images/${props.poster})`}}>
              <Link to="/movies">
                  <>
                  <div>

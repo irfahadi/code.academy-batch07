@@ -119,7 +119,7 @@ export const movieData = [
         "vote_average": 5.6,
         "title": "Cold Pursuit",
         "popularity": 214.426,
-        "poster_path": "coldpersuit.jpg",
+        "poster_path": "coldpursuit.jpg",
         "original_language": "en",
         "original_title": "Cold Pursuit",
         "genre_ids": [
@@ -275,7 +275,7 @@ export const movieData = [
         "vote_average": 6.9,
         "title": "The Lego Movie 2: The Second Part",
         "popularity": 97.709,
-        "poster_path": "lego.jpg",
+        "poster_path": "legomovie.jpg",
         "original_language": "en",
         "original_title": "The Lego Movie 2: The Second Part",
         "genre_ids": [
@@ -439,7 +439,7 @@ export const movieData = [
         "vote_average": 0,
         "title": "Avengers: Endgame",
         "popularity": 34.011,
-        "poster_path": "avenger.jpg",
+        "poster_path": "avengers.jpg",
         "original_language": "en",
         "original_title": "Avengers: Endgame",
         "genre_ids": [
@@ -510,5 +510,166 @@ export const movieData = [
         "adult": false,
         "overview": "For the handsome Sebastian life goes by easily. During the day he works in a fashion shop, in the evening he flirts through the clubs of the city. Blessed with an extraordinary voice, all signs of a career for the young singer. Ironically, an accident rips him out of his carefree life: Suddenly Sebastian can not see anymore. Instead of the party girls, a young woman enters his life, for whom he had never had eyes: the inconspicuous nurse Mia (Paula Kalenberg). Through her, Sebastian begins to re-experience the world - and for the first time gets to know real feelings. Thanks to Mia he writes a song that really comes from the heart. Overnight, it makes him, the blind romantic, known on the Internet. When he regains his sight, he has to decide: Will he also return to his old life?",
         "release_date": "2019-02-16"
+    }
+];
+
+
+export const movieRating = [
+    {
+        vote_count: 10,
+        id: 399579,
+        video: true,
+        vote_average: 6.7,
+        title: 'Alita: Battle Angel Women',
+        popularity: 483.184,
+        poster_path: 'alita.jpg',
+        original_language: 'en',
+        original_title: 'Alita: Battle Angel',
+        genre_ids: [ 28, 878, 53, 10749 ],
+        backdrop_path: '/8RKBHHRqOMOLh5qW3sS6TSFTd8h.jpg',
+        adult: false,
+        overview:
+            'When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.',
+        release_date: '2019-01-31'
+    },
+    {
+        "vote_count": 18,
+        "id": 450465,
+        "video": true,
+        "vote_average": 6.7,
+        "title": "Glass",
+        "popularity": 264.836,
+        "poster_path": "glass.jpg",
+        "original_language": "en",
+        "original_title": "Glass",
+        "genre_ids": [
+            53,
+            9648,
+            18,
+            14
+        ],
+        "backdrop_path": "/lvjscO8wmpEbIfOEZi92Je8Ktlg.jpg",
+        "adult": false,
+        "overview": "In a series of escalating encounters, security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.",
+        "release_date": "2019-01-16"
+    },
+    {
+        "vote_count": 12,
+        "id": 438650,
+        "video": true,
+        "vote_average": 5.6,
+        "title": "Cold Pursuit",
+        "popularity": 214.426,
+        "poster_path": "coldpursuit.jpg",
+        "original_language": "en",
+        "original_title": "Cold Pursuit",
+        "genre_ids": [
+            53,
+            28,
+            18
+        ],
+        "backdrop_path": "/aiM3XxYE2JvW1vJ4AC6cI1RjAoT.jpg",
+        "adult": false,
+        "overview": "Nels Coxman's quiet life comes crashing down when his beloved son dies under mysterious circumstances. His search for the truth soon becomes a quest for revenge as he seeks coldblooded justice against a drug lord and his inner circle.",
+        "release_date": "2019-02-07"
+    },
+    {
+        "vote_count": 20,
+        "id": 166428,
+        "video": true,
+        "vote_average": 8,
+        "title": "How to Train Your Dragon: The Hidden World",
+        "popularity": 150.578,
+        "poster_path": "dragon.jpg",
+        "original_language": "en",
+        "original_title": "How to Train Your Dragon: The Hidden World",
+        "genre_ids": [
+            16,
+            10751,
+            12
+        ],
+        "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+        "adult": false,
+        "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away.  When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+        "release_date": "2019-01-03"
+    }
+];
+
+export const genre = [
+    {
+        id: 28,
+        name: 'Action'
+    },
+    {
+        id: 12,
+        name: 'Adventure'
+    },
+    {
+        id: 16,
+        name: 'Animation'
+    },
+    {
+        id: 35,
+        name: 'Comedy'
+    },
+    {
+        id: 80,
+        name: 'Crime'
+    },
+    {
+        id: 99,
+        name: 'Documentary'
+    },
+    {
+        id: 18,
+        name: 'Drama'
+    },
+    {
+        id: 10751,
+        name: 'Family'
+    },
+    {
+        id: 14,
+        name: 'Fantasy'
+    },
+    {
+        id: 36,
+        name: 'History'
+    },
+    {
+        id: 27,
+        name: 'Horror'
+    },
+    {
+        id: 10402,
+        name: 'Music'
+    },
+    {
+        id: 9648,
+        name: 'Mystery'
+    },
+    {
+        id: 10749,
+        name: 'Romance'
+    },
+    {
+        id: 878,
+        name: 'Science Fiction'
+    },
+    {
+        id: 10770,
+        name: 'TV Movie'
+    },
+    {
+        id: 53,
+        name: 'Thriller'
+    },
+    {
+        id: 10752,
+        name: 'War'
+    },
+    {
+        id: 37,
+        name: 'Western'
     }
 ];

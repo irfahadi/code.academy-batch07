@@ -1,6 +1,6 @@
 import React from 'react'
-import Movie from '../../card/movie'
-import {movieData} from './MovieData'
+import Movie from './MovieCard'
+import {movieData} from '../../MovieData'
 import './MovieList.css'
 
 export default function Movies() {

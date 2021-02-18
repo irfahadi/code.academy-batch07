@@ -19,8 +19,8 @@ const SideBar = () =>{
         },
         {
             id:3,
-            path:'/todo',
-            name: 'Todo',            
+            path:'/rating',
+            name: 'Rating',            
             exact: true,
             component: null
         },
