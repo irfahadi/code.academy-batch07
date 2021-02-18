@@ -16,5 +16,4 @@ const deretNegation = (x) =>{
     z = z.slice(0, -1);
     return z;
 }
-
 console.log(deretNegation(25));
