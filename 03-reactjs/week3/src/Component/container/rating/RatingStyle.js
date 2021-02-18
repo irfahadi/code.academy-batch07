@@ -1,10 +1,11 @@
-.popular{
+import styled from 'styled-components'
+
+export const Popular = styled.div `
     display: flex;
     flex-direction: column;
-    
-}
+`;
 
-.top-popular {
+export const TopPopular = styled.div `
     display: flex;
     background: #666666;
     border: 1px solid #008080;
@@ -12,20 +13,20 @@
     width: 750px;
     height: 155px;
     justify-content: flex-start;
-}
+`;
 
-img {
+export const Image = styled.img `
     height: 100%;
     width: 100%;
     vertical-align: middle;
-}
+`;
 
-.logo {
+export const Poster = styled.div `
     width: 50%;
     margin: 0;
-}
+`;
 
-.description {
+export const Description = styled.div `
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -34,48 +35,44 @@ img {
     font-family: "Jaldi", sans-serif;
     padding: 1rem;
     height: auto;
-}
+`;
 
-.vote {
+export const Vote = styled.div `
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     justify-content: space-between;
     text-transform: initial;
-}
+    > span * {
+        margin-left: .5rem;
+    }
+    > span a {
+        cursor: pointer;
+    }
+`;
 
-.vote > span * {
-    margin-left: .5rem;
-}
-
-.vote > span a {
-    cursor: pointer;
-}
-
-.chevron {
+export const Chevron = styled.div `
     background: transparent;
     color: #fff68f;
     padding: 1px 2px 0 0;
-    width: 50px;
-}
+    width: 50px; 
+`;
 
-.title-rating {
+export const TitleRating = styled.div `
     font-size: .55rem;
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0 auto;
-}
-
-.title-rating > h2{
+    > h2{
     margin-top: 0;
     color: #fef65b;
-}
-
-.title-rating p {
+    p {
     font-size: .65rem;
     line-height: 1.9;
     text-transform: initial;
     text-align: justify;
     color: #ffffff;
+    }
 }
+`;

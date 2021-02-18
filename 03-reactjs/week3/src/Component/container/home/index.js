@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Student from './Student'
-import StudentData from './StudentData'
+import StudentData, {skills} from './StudentData'
 
 export default class Home extends Component {
     state = {
@@ -8,6 +8,20 @@ export default class Home extends Component {
         search : '',
         select : '',
         isSelected: false
+    }
+
+    onShowSkills = (studentSkills)=>{
+        let tampung = []
+        skills.map(skill=>{
+            studentSkills.map(studentSkill=>{
+                // console.log(studentSkill+"="+skill.id)
+                if(skill.id===studentSkill){
+                    tampung.push(`${skill.desc}, `)
+                }
+            })
+        })
+        tampung[tampung.length-1] = tampung[tampung.length-1].slice(0,-2) 
+        return tampung;
     }
 
     //setiap kali user input keyboard, maka value akan disimpan di state search
@@ -54,8 +68,12 @@ export default class Home extends Component {
                     <option value="nama">Nama</option>
                     <option value="ipk">IPK</option>
                     <option value="kota">Kota</option>
+                    <option value="vote">Vote</option>
                 </select>
+                <br />
                 <h1>Student</h1>
+                <br />
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-5 text-sm">
                 {
                     this.state.isSelected?(
                         this.state.student
@@ -67,6 +85,8 @@ export default class Home extends Component {
                                     return b.ipk - a.ipk;
                                 case 'kota' :
                                     return ('' + a.kota).localeCompare(b.kota);
+                                case 'vote' :
+                                    return b.vote - a.vote;
                                 default :
                                     break;
                             }
@@ -76,7 +96,10 @@ export default class Home extends Component {
                             ipk={x.ipk}
                             kota={x.kota}
                             vote={x.vote}
+                            skills={x.skills}
                             onVote={this.onHandleVote}
+                            onShowSkills={this.onShowSkills}
+                            
                             />)
                         
                     ):(
@@ -88,10 +111,13 @@ export default class Home extends Component {
                             ipk={x.ipk}
                             kota={x.kota}
                             vote={x.vote}
+                            skills={x.skills}
                             onVote={this.onHandleVote}
+                            onShowSkills={this.onShowSkills}
                             />)
                     )
                 }
+                </div>
             </div>
         )
     }

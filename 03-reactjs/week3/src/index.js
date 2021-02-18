@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './MainLayout.css';
+import './index.css';
 import MainLayout from './Component/MainLayout'
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';

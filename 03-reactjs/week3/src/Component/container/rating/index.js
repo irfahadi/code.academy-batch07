@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {movieRating} from '../../MovieData'
 import RatingCard from './RatingCard'
+import {Popular} from './RatingStyle'
 
 export default function Rating() {
     const [Movies, setMovies] = useState([])
@@ -39,8 +40,7 @@ export default function Rating() {
 
 
     return (
-        <div className="popular">
-            <h1>Rating Popular Movie</h1>
+        <Popular>
             {
                 Movies.sort((a,b)=> b.vote_count - a.vote_count).map(movie=>(
                     <RatingCard
@@ -56,7 +56,7 @@ export default function Rating() {
                     />
                 ))
             }            
-        </div>
+        </Popular>
     )
 }
 

@@ -7,13 +7,14 @@ import List from './container/list'
 import Rating from './container/rating'
 import Error404 from './container/error404'
 import Movies from './container/movies'
+import * as css from './MainStyle'
 
 const MainLayout = () =>{
     return (
-        <div className="container">
+        <css.Container>
             <Header />
             <SideBar />
-            <div className="maincontent">
+            <css.MainContent>
                 <Switch>
                 <Route path="/" component={Home} exact />
                 <Route path="/counter" component={Counter} />
@@ -22,8 +23,8 @@ const MainLayout = () =>{
                 <Route path="/movies" component={Movies} />
                 <Route component={Error404} />
                 </Switch>
-            </div>
-        </div>
+            </css.MainContent>
+        </css.Container>
     )
 }
 

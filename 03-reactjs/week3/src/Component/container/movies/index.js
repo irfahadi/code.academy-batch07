@@ -1,11 +1,11 @@
 import React from 'react'
 import Movie from './MovieCard'
 import {movieData} from '../../MovieData'
-import './MovieList.css'
+import {MoviesList} from './MovieStyle'
 
 export default function Movies() {
     return (
-        <div className="movies">
+        <MoviesList>
             {
                 movieData.map(el=>
                 <Movie
@@ -17,6 +17,6 @@ export default function Movies() {
                 />
                 )
             }            
-        </div>
+        </MoviesList>
     )
 }

@@ -1,4 +1,7 @@
-.card{
+import styled from 'styled-components'
+
+export const Card = styled.div `
+background-image: ${props => `url('images/${props.poster}')`};
     justify-content: center;
     background-color: transparent;
     position: relative;
@@ -8,41 +11,33 @@
     padding: 0 1.7rem 30px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 55%;
+    width: 85%;
     height: 200px;
     box-shadow: 0 2px 5px #777 ;
     overflow: hidden;
-    margin: 10px 65px;
+    margin: 10px 60px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-box-shadow: 0 2px 5px #777 ;
     -moz-box-shadow: 0 2px 5px #777 ;
     transition: all 0.2s ease-in-out;
-}
+    :hover{
+        box-shadow: 0 2px 7px #777 ; 
+        -webkit-box-shadow: 0 2px 7px #777 ;
+        -webkit-transform: translate(0,-2%);
+        -moz-transform: translate(0,-2%);
+        transform: translate(0,-2%);
+    }
+    :active{
+        box-shadow: none;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+    }
+`;
 
-.card:hover{
-    box-shadow: 0 2px 7px #777 ; 
-    -webkit-box-shadow: 0 2px 7px #777 ;
-    -webkit-transform: translate(0,-2%);
-    -moz-transform: translate(0,-2%);
-    transform: translate(0,-2%);
-}
-
-.card:active{
-    box-shadow: none;
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-}
-
-.card:hover .title{
-    padding-bottom: 50px;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.card .title{
+export const Title = styled.div `
     display: inline-flex;
     flex-direction: column;
     position: absolute;
@@ -58,15 +53,20 @@
     text-align: center;
     opacity: 0;
     transition: 0.5s;
-}
+    :hover{
+        padding-bottom: 50px;
+        opacity: 1;
+        transition: 0.5s;
+    }
+`;
 
-.play {
+export const Play = styled.div `
     width: 32;
     height: 32;
     color: #ffd700;
-}
+`;
 
-.quality{
+export const Quality = styled.div `
     background: rgba(11,171,0, 0.58);
     color: white;
     height: 20px;
@@ -79,9 +79,9 @@
     right: 0;
     top: 0;
     width: auto;
-}
+`;
 
-.ratingstar{
+export const RatingStar = styled.div `
     position: absolute;
     left: 1px;
     border-radius: 0;
@@ -96,8 +96,16 @@
     text-align: left;
     display: inline-flex;
     opacity: 0.9;
-}
+`;
 
-.rating{
+export const Rating = styled.div `
     margin-top: 2px;
-}
+`;
+
+export const MoviesList = styled.div `
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+`;

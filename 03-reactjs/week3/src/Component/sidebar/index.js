@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import {NavSide} from '../MainStyle'
 
 const SideBar = () =>{
 
@@ -33,7 +34,7 @@ const SideBar = () =>{
         }
     ]
     return (
-        <div className="navside">
+        <NavSide >
             <ul>
                 {
                     sidemenus.map(data=> 
@@ -42,7 +43,7 @@ const SideBar = () =>{
                     </li>)
                 }
             </ul>
-        </div>
+        </NavSide>
     )
 }
 

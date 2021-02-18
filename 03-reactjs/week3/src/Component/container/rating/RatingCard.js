@@ -1,5 +1,5 @@
 import React from 'react'
-import './Rating.css'
+import * as css from './RatingStyle'
 import {FaStar} from '@react-icons/all-files/fa/FaStar'
 import {FaHeart} from '@react-icons/all-files/fa/FaHeart'
 import {FaChevronUP} from '@react-icons/all-files/fa/FaChevronUp'
@@ -7,16 +7,16 @@ import {FaThumbsUp} from '@react-icons/all-files/fa/FaThumbsUp'
 
 export default function RatingCard(props) { 
     return (
-        <div className="top-popular">
-            <div className="logo">
-                <img src={props.poster} alt="poster" />
-            </div>
-            <div className="description">
-                <div className="title-rating">
+        <css.TopPopular>
+           <css.Poster>
+               <css.Image src={props.poster} alt="poster" />
+           </css.Poster>
+           <css.Description >
+                <css.TitleRating className="leading-loose">
                     <h2>{props.title}</h2>
                     <p>{props.overview}</p>
-                </div>
-                <div className="vote">
+                </css.TitleRating>
+                <css.Vote className="text-center">
                     <span style={{color: '#fff68f', opacity: 0.5}}>
                         <FaStar size={18} />
                         <span>{props.rating}</span>
@@ -29,8 +29,8 @@ export default function RatingCard(props) {
                             <FaThumbsUp size={18} onClick={()=>props.handleUpVote(props.id)}/>
                         <span>{props.vote}</span>
                     </span>    
-                </div>           
-            </div>
-        </div>
+                </css.Vote>       
+           </css.Description>
+        </css.TopPopular>
     )
 }
