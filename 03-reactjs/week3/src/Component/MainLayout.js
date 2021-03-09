@@ -7,6 +7,7 @@ import List from './container/list'
 import Rating from './container/rating'
 import Error404 from './container/error404'
 import Movies from './container/movies'
+import Category from './category/'
 import * as css from './MainStyle'
 
 const MainLayout = () =>{
@@ -21,6 +22,7 @@ const MainLayout = () =>{
                 <Route path="/list" component={List} />
                 <Route path="/rating" component={Rating} />
                 <Route path="/movies" component={Movies} />
+                <Route path="/category" component={Category} />
                 <Route component={Error404} />
                 </Switch>
             </css.MainContent>

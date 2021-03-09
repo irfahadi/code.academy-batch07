@@ -39,7 +39,7 @@ export const NavTop = styled.div`
         width: 170px;
     }
     li.logo{
-        margin-right: 75vh;
+        margin-right: 140vh;
     }
 `;
 
@@ -65,12 +65,12 @@ export const NavSide = styled.div`
     }
 `;
 
-export const NavSideLink =`
+export const NavSideLink =styled.div`
     margin: 0.5em 1em;
     text-decoration-line: none;
 `;
 
-export const Footer=` 
+export const Footer=styled.div` 
     h2{
         font-size: 14px;
         color: #468499
